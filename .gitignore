@@ -216,3 +216,40 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ====================================================================
+# Data and Large Files (Crucial for Bioinformatics)
+# ====================================================================
+# Ignore raw data files to prevent uploading proprietary/large data
+*.csv
+*.xlsx
+*.xls
+*.tsv
+*.json
+*.parquet
+# Allow documentation files inside data folders, but ignore the data itself
+!data/README.md
+
+# ====================================================================
+# Python Environment & Caches
+# ====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# ====================================================================
+# Operating System Files
+# ====================================================================
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
