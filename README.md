@@ -1,15 +1,15 @@
 # Biomedical Trial Pipeline: Cohort-Level CBC Feature Prioritization via Multivariable Regression
 
 ## Overview
-[cite_start]This repository contains a modular, production-grade Python pipeline designed to analyze longitudinal patient-level Complete Blood Count (CBC) metrics and prioritize features driving the cellular expansion fold of liver cancer cells[cite: 12, 123]. [cite_start]Originally developed as a localized R analysis [cite: 81][cite_start], this architecture has been completely refactored into a scalable, object-oriented Python pipeline to optimize reproducibility, structural validation, and downstream statistical reporting[cite: 5, 19].
+This repository contains a modular, production-grade Python pipeline designed to analyze longitudinal patient-level Complete Blood Count (CBC) metrics and prioritize features driving the cellular expansion fold of liver cancer cells. Originally developed as a localized R analysis, this architecture has been completely refactored into a scalable, object-oriented Python pipeline to optimize reproducibility, structural validation, and downstream statistical reporting.
 
 ## Research & Clinical Motivation
-[cite_start]In cell therapy manufacturing—specifically translational oncological workflows evaluating liver cancer interventions—understanding host baseline biological variability is key to predicting ex vivo cellular manufacturing success[cite: 12, 22, 123]. [cite_start]Cellular expansion rates are highly variable across patient cohorts, creating significant challenges for sample scaling and treatment consistency[cite: 33, 129]. 
+In cell therapy manufacturing—specifically translational oncological workflows evaluating liver cancer interventions—understanding host baseline biological variability is key to predicting ex vivo cellular manufacturing success. Cellular expansion rates are highly variable across patient cohorts, creating significant challenges for sample scaling and treatment consistency. 
 
-[cite_start]By building a structured framework to screen routine clinical biomarkers (such as CBC counts), this pipeline systematically evaluates whether baseline hematological profiles correlate with expansion dynamics[cite: 123, 129]. [cite_start]This enables research teams to transition away from manual, ad-hoc tracking and establish data-driven feature prioritization workflows capable of uncovering translationally relevant clinical associations[cite: 6, 17, 33].
+By building a structured framework to screen routine clinical biomarkers (such as CBC counts), this pipeline systematically evaluates whether baseline hematological profiles correlate with expansion dynamics. This enables research teams to transition away from manual, ad-hoc tracking and establish data-driven feature prioritization workflows capable of uncovering translationally relevant clinical associations.
 
 ## Computational Pipeline Architecture
-[cite_start]Unlike typical monolithic analysis notebooks, this project uses a modular design pattern to ensure that data ingestion, mathematical transformations, and statistical routines are strictly decoupled[cite: 19]:
+Unlike typical monolithic analysis notebooks, this project uses a modular design pattern to ensure that data ingestion, mathematical transformations, and statistical routines are strictly decoupled:
 
 ```text
 biomedical-trial-variability-analysis/
